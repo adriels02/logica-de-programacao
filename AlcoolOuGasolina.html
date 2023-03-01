@@ -1,0 +1,22 @@
+<script>
+
+/* Com o surgimento dos carros bicombustíveis é possível
+escolher qual combustível utiliza, de acordo com o custo na bomba. Em geral
+é mais econômico abastecer o veículo com álcool quando o preço do litro for
+inferior a 70% do valor da gasolina. Sabendo desta informação, desenvolva
+um programa que solicite o preço do litro da gasolina e o preço do litro do
+álcool e informe qual combustível é mais econômico na hora de abastecer. */
+
+var alcool, gasolina, porcentagem;
+ alcool = parseFloat(prompt("Digite o preco do alcool."))
+ gasolina = parseFloat(prompt("Digite o preco da gasolina."))
+
+if (alcool < gasolina) {
+    porcentagem = (alcool * 100) / gasolina
+if (porcentagem < 70) 
+    document.write("É mais economico abastecer com alcool.")
+}
+else {
+    document.write("É mais economico abastecer com gasolina.")
+}
+</script>

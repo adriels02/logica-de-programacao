@@ -1,0 +1,31 @@
+<script>
+/* Ordene um array do maior para o menor elemento */
+
+var array1 = [10, 1 , 5 , 8, 7, 12]
+
+function ordenamento(array) {  
+    var elemento 
+    for (var i = 0 ; i < array.length ; i++){      
+      if (array[i] > array[i + 1] ){
+          elemento = array[i + 1]
+          array[i + 1] = array[i]
+          array[i] = elemento
+        i = -1     
+      }
+    }
+      return array
+}
+document.write(ordenamento(array1))
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

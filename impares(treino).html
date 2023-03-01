@@ -1,0 +1,19 @@
+<script>
+/* Desenvolva um programa que solicite um número inteiro n e exiba
+em uma única linha, todos os números ímpares entre 1 até n e a soma destes
+números. Exemplo: se o usuário informar o número n = 10, o programa
+deverá exibir como resposta “1 + 3 + 5 + 7 + 9 = 25”. */
+
+ var n, soma = 0;
+ n = parseInt(prompt("Digite um numero inteiro"))
+
+ for (var i = 1; i <= n; i++) {
+
+      if (i % 2 !== 0){
+      soma += i
+      document.write( " + " + i)
+      }
+ }
+
+document.write(" = " + soma)
+</script>

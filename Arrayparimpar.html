@@ -1,0 +1,27 @@
+<script>
+    
+/*Desenvolva um programa de computador que leia um
+conjunto de 15 valores inteiros e os coloque em 2 arrays conforme forem
+pares ou ímpares. Ao término da digitação dos valores, deve-se mostrar os
+elementos dos arrays dos números pares e dos ímpares. */
+
+var elemento
+var impares = []
+var pares = []
+
+ for (var i = 1; i <= 15; i++){
+
+   elemento = parseInt(prompt("Digite um número inteiro par ou ímpar"))
+
+       if (elemento % 2 == 0){
+        pares.unshift(elemento)
+       }
+       else {
+        impares.unshift(elemento)
+       }
+ }
+
+document.write("Pares: " + pares + "<br>")
+document.write("Impares: " + impares)
+
+</script>

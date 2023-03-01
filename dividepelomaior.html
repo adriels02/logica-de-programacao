@@ -1,0 +1,25 @@
+<script>
+/* Escreva um programa de computador que leia um array
+de 100 posições de números inteiros e divida todos os seus elementos pelo
+maior valor encontrado no array. Mostre o array após os cálculos. */
+
+var array = []
+var num , maior;
+for (var i = 0 ; i < 100 ; i++){
+
+    num = parseInt(prompt("Digite um número"))
+    array.push(num)
+}
+for (var i = 0 ; i < array.length ; i++){
+
+    maior = array[0]
+
+    if (array[i] > maior){
+        maior = array[i]
+    }
+}
+for (var i = 0 ; i < array.length ; i++){
+array[i] = array[i] / maior
+}
+document.write(array)
+</script>

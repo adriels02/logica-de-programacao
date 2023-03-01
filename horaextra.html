@@ -1,0 +1,48 @@
+<script>
+
+/* As horas extras de um determinado funcionário são calculadas
+de acordo com o dia da semana no qual ele realizou àquela hora extra, de
+acordo com a tabela abaixo:
+
+                    Dia da semana Valor por hora extra
+                         Segunda-feira R$ 10,00
+                         Terça-feira R$ 8,00
+                         Quarta-feira R$ 7,00
+                         Quinta-feira R$ 9,00
+                         Sexta-feira R$ 15,00
+
+Sabendo que o funcionário só faz hora extra uma vez por mês, desenvolva um
+programa que calcule e exiba quanto deverá ser pago em hora extra a este
+funcionário. */
+
+var diadasemana, quantidadedehoras, horaextraseg, horaextrater, horaextraqua, horaextraqui, horaextrasex;
+
+ diadasemana = parseInt(prompt("Informe o dia da semana em que a hora extra foi feita, de modo que, segunda-feira seja 1, terca-feira seja 2 e assim por diante."))
+ quantidadedehoras = parseInt(prompt("informe a quantidade de horas trabalhadas na hora extra."))
+
+ switch (diadasemana) {
+    case 1:
+      horaextraseg = quantidadedehoras * 10.00
+      document.write("A quantia a ser paga referente a horas extra para o funcionário é: " + horaextraseg ," R$")
+        break;
+    case 2:
+      horaextrater = quantidadedehoras * 8.00
+      document.write("A quantia a ser paga referente a horas extra para o funcionário é: " + horaextrater ," R$")
+        break;
+    case 3:
+      horaextraqua = quantidadedehoras * 7.00
+      document.write("A quantia a ser paga referente a horas extra para o funcionário é: " + horaextraqua ," R$")
+        break;
+    case 4:
+      horaextraqui = quantidadedehoras * 9.00
+      document.write("A quantia a ser paga referente a horas extra para o funcionário é: " + horaextraqui ," R$")
+        break;
+    case 5:
+      horaextrasex = quantidadedehoras * 15.00
+      document.write("A quantia a ser paga referente a horas extra para o funcionário é: " + horaextrasex ," R$")
+        break;
+    default:
+        document.write("o dia digitado é inválido.")
+        break;
+ }
+</script>

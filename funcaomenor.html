@@ -1,0 +1,30 @@
+<script>
+
+/* Desenvolva uma função que receba um array de números
+inteiros e retorne o menor número deste array. Teste essa função com dois
+exemplos. */
+
+function menor(array) {
+  var menor = array[0]
+    for (var i = 0 ; i < array.length ; i++){
+         if (menor > array[i]){
+           menor = array[i]
+         }
+       
+
+    }
+    return menor
+}
+
+var A = [ 1 , -1 , 20 , 1 , 29 ]
+var B = [ -11 , 1 , 98 , 100 , 2 ]
+
+document.write(menor(A) + "<br>")
+document.write(menor(B) + "<br>")
+
+
+
+
+
+
+</script>

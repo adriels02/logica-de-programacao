@@ -1,0 +1,23 @@
+<script>
+
+/* Um número inteiro não-negativo n é dito perfeito se este for igual à
+soma de seus divisores positivos diferentes de n. Exemplo: se n = 6, este será
+perfeito, pois 1 + 2 + 3 = 6. Assim, construa um programa que dado um
+número inteiro não-negativo n, verificar se n é perfeito. */
+
+var n, soma = 0;
+n = parseInt(prompt("Digite um número"))
+for (var i = 0; i < n; i++){
+
+    if (n % i == 0){
+        soma += i
+    }
+}
+
+    if (soma == n){
+        document.write("o numero escolhido é perfeito")
+    }
+    else {
+        document.write("o numero escolhido não é perfeito")
+    }
+</script>

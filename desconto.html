@@ -1,0 +1,40 @@
+<script>
+    
+/* Uma loja de Garanhuns-PE está oferecendo para os seus
+clientes a seguinte promoção: se o valor em compras for de até R$ 150,00,
+será oferecido um desconto de 3%; se o valor for maior que R$ 150,00 e
+menor ou igual a R$ 250,00 o desconto será de 5%; se o valor for acima de
+R$ 250,00 e menor ou igual a R$ 350,00 o desconto será de 10%; e se o valor
+for acima de R$ 350,00 o desconto será de 15%. Assim, desenvolva um
+programa que mostre o valor (em reais) da compra, o valor (em reais) deste
+desconto, e o valor final (em reais) que o cliente deverá pagar. */
+
+var compra, desconto, precofinal;
+
+compra = parseFloat(prompt("Digite o valor da sua compra:"))
+
+if (compra <= 150.00) {
+    desconto = compra * 0.03
+    precofinal = compra - desconto
+    document.write("Sua compra foi realizada no valor de: " + compra , " R$ mas foi aplicado um desconto no valor de: " + desconto , " R$.")
+    document.write (" Sendo assim, o valor a ser pago pela compra é " + precofinal , " R$")
+}
+if (compra > 150.00 && compra <= 250.00) {
+    desconto = compra * 0.05
+    precofinal = compra - desconto
+    document.write("Sua compra foi realizada no valor de: " + compra , " R$ mas foi aplicado um desconto no valor de: " + desconto , " R$.")
+    document.write (" Sendo assim, o valor a ser pago pela compra é " + precofinal , " R$")
+}
+if (compra > 250.00 && compra <= 350.00) {
+    desconto = compra * 0.10
+    precofinal = compra - desconto
+    document.write("Sua compra foi realizada no valor de: " + compra , " R$ mas foi aplicado um desconto no valor de: " + desconto , " R$.")
+    document.write (" Sendo assim, o valor a ser pago pela compra é " + precofinal , " R$")
+}
+else {
+    desconto = compra * 0.15
+    precofinal = compra - desconto
+    document.write("Sua compra foi realizada no valor de: " + compra , " R$ mas foi aplicado um desconto no valor de: " + desconto , " R$.")
+    document.write (" Sendo assim, o valor a ser pago pela compra é " + precofinal , " R$")
+}
+</script>

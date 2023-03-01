@@ -1,0 +1,66 @@
+<script>
+
+/* Elabore um programa de computador que possua uma
+função que receba como parâmatro duas matrizes quaisquer e retorne a subtração
+dessas matrizes. Caso não seja possível efetuar a subtração destas matrizes, exiba
+uma mensagem de erro e retorne uma matriz vazia. */
+
+function matriz() {
+var linhas , colunas , array = []
+    linhas = parseInt(prompt("Digite o número de linhas da matriz"))
+    colunas = parseInt(prompt("Digite a quantidade de colunas da matriz"))      
+     for(var i = 0 ; i < linhas ; i++){
+        array[i] = []
+         for (var j = 0 ; j < colunas ; j++) {
+            array[i][j] = parseInt(prompt("Insira um numero para a matriz"))
+         }
+     }               
+        return array
+        
+}
+
+ function subtracao(){
+
+      var matriz1 = [] = matriz(matriz1)
+      var matriz2 = [] = matriz(matriz2)
+      var subtracao = []
+
+      for(var i = 0 ; i < matriz1.length ; i++){
+          subtracao[i] = []
+          for (var j = 0 ; j < matriz1[0].length; j++){
+            subtracao[i][j] = []
+          }
+      }
+     if (matriz1.length == matriz2.length && matriz1[0].length == matriz2[0].length){
+
+           for(var i = 0 ; i < matriz1.length; i++){
+               for(var j = 0; j < matriz1[0].length; j++){
+                subtracao[i][j] = matriz1[i][j] - matriz2[i][j]
+               }
+           }
+             document.write("A subtração das duas matrizes é: " + "<br>")
+              for(var i = 0; i < subtracao.length; i++){
+                  document.write(subtracao[i] + "<br>")
+              }
+     }
+    else {
+        alert("As proporções das matrizes são incompatíveis com essa operação")
+        return []
+    }
+    return []
+ }
+
+document.write(subtracao())
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

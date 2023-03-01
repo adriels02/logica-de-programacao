@@ -1,0 +1,19 @@
+<script>
+
+/* Crie uma função que fique solicitando que o usuário informe um número
+inteiro e só pare de solicitar quando o número informado estiver entre os números de
+um dado (1 a 6). */
+
+function num() {
+     var num
+   for (;;) {
+        var num = parseFloat(prompt("Informe um numero entre 1 e 6"))
+       if (num >= 1 && num <= 6 ) {          
+           document.write(num)
+           break;
+       }
+    }
+    return []
+}
+document.write(num())
+</script>

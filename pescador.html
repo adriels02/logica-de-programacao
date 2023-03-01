@@ -1,0 +1,26 @@
+<script>
+
+/* João Papo-de-Pescador, homem de bem, comprou um
+microcomputador para controlar o rendimento diário de seu trabalho. Toda
+vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento
+de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$
+4,00 por quilo excedente. João precisa que você faça um programa que
+solicite o peso de certa quantidade de peixes e caso haja excesso de peso,
+mostre qual é este peso (em quilos) e quanto de multa deverá ser paga. Caso
+não haja excesso, deverá ser mostrada a mensagem “Parabéns por não
+ultrapassar o limite”. */
+
+ var pesopeixe, excesso, multa;
+
+    pesopeixe = parseFloat(prompt("Informe quantos Kg de peixe foi pescado"))
+ if (pesopeixe < 50.00){
+    document.write("Você pescou " + pesopeixe , " Kg. Parabéns por não ultrapassar o limite.")
+ }
+ else {
+    excesso = pesopeixe - 50.00
+    multa = excesso * 4.00
+    document.write("Você excedeu o limite de 50Kg. o valor do excesso é: " + excesso , " Kg. o valor a ser pago de multa é: " + multa , " R$.")
+    
+ }
+
+</script>

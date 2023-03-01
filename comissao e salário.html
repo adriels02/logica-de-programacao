@@ -1,0 +1,14 @@
+<script>
+
+var vendedor, produtos_vendidosStr,produtos_vendidos, salario_comissao,valor_da_comissao, salario;
+vendedor = prompt("Informe o nome do vendedor")
+
+produtos_vendidosStr = prompt("Informe a quantidade de produtos vendidos")
+produtos_vendidos = parseInt(produtos_vendidosStr)
+
+valor_da_comissao = produtos_vendidos * 25;
+
+salario = valor_da_comissao + 1000;
+
+document.write("vendedor: " + vendedor,"  /   Salário: " + salario, " R$")
+</script>

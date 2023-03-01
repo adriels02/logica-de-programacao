@@ -1,0 +1,36 @@
+<script>
+
+/* Desenvolva um programa de computador que leia 20 números
+inteiros e os armazene em um array. Depois, mostre na tela cada um dos
+valores distintos que aparecem neste array, dizendo quantas vezes cada valor
+aparece neste array.*/
+
+    var array = []
+    var num
+    var acumulador = 0
+    var atual = null
+
+ for (var i = 0 ; i < 20 ; i++) {
+        
+        num = parseInt(prompt("Digite um numero inteiro"))
+        array.push(num)
+ }
+      array.sort()
+    
+for (var i = 0 ; i < array.length ; i++) {
+        
+  if (array[i] != atual){
+        if (acumulador > 0){
+            document.write(atual + " aparece -> " + acumulador + " vezes <br>" )
+        }
+    atual = array[i]
+    acumulador = 1 
+    }
+  else {
+       acumulador++      
+    }
+}
+  if (acumulador > 0) {
+        document.write(atual + " aparece --> " + acumulador + " vezes")
+    }
+    </script>

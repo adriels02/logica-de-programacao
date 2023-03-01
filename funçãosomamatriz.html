@@ -1,0 +1,54 @@
+<script>
+
+/* Elabore um programa de computador que possua uma função
+que receba como parâmatro duas matrizes quaisquer e retorne a soma dessas
+matrizes. Caso não seja possível efetuar a soma destas matrizes, exiba uma
+mensagem de erro e retorne uma matriz vazia. */
+
+function matriz() {
+var linhas , colunas , array = []
+    linhas = parseInt(prompt("Digite o número de linhas da matriz"))
+    colunas = parseInt(prompt("Digite a quantidade de colunas da matriz"))      
+     for(var i = 0 ; i < linhas ; i++){
+        array[i] = []
+         for (var j = 0 ; j < colunas ; j++) {
+            array[i][j] = parseInt(prompt("Insira um numero para a matriz"))
+         }
+     }               
+        return array
+        
+}
+
+ function soma(){
+
+      var matriz1 = [] = matriz(matriz1)
+      var matriz2 = [] = matriz(matriz2)
+      var somatrue = []
+
+      for(var i = 0 ; i < matriz1.length ; i++){
+          somatrue[i] = []
+          for (var j = 0 ; j < matriz1[0].length; j++){
+            somatrue[i][j] = []
+          }
+      }
+     if (matriz1.length == matriz2.length && matriz1[0].length == matriz2[0].length){
+
+           for(var i = 0 ; i < matriz1.length; i++){
+               for(var j = 0; j < matriz1[0].length; j++){
+                somatrue[i][j] = matriz1[i][j] + matriz2[i][j]
+               }
+           }
+             document.write("A soma das duas matrizes é: " + "<br>")
+              for(var i = 0; i < somatrue.length; i++){
+                  document.write(somatrue[i] + "<br>")
+              }
+     }
+    else {
+        alert("As proporções das matrizes são incompatíveis com essa operação")
+        return []
+    }
+    return []
+ }
+
+document.write(soma())
+</script>

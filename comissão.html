@@ -1,0 +1,31 @@
+<script>
+
+var valor_da_vendaStr, valor_da_venda, porcentagem_da_comissaoStr, porcentagem_da_comissao, comissao, porcentagem_decimal;
+
+valor_da_vendaStr = prompt("Informe o valor da venda (Apenas números)")
+valor_da_venda = parseInt(valor_da_vendaStr)
+
+porcentagem_da_comissaoStr = prompt("Informe a porcentagem da comissão (Apenas números)")
+porcentagem_da_comissao = parseInt(porcentagem_da_comissaoStr)
+
+porcentagem_decimal = porcentagem_da_comissao / 100
+
+comissao = porcentagem_decimal * valor_da_venda;
+
+document.write("Comissão: " + comissao , " R$" )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

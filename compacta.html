@@ -1,0 +1,24 @@
+<script>
+
+/*Desenvolva um programa de computador leia um array (A) de
+100 posições. Em seguida, compacte o array, retirando os valores nulos e
+negativos. Coloque o resultado no array B. Mostre os arrays A e B.  */
+
+var array = []
+var num
+
+for (var i = 0 ; i < 100 ; i++){
+    
+    num = parseInt(prompt("Digite um numero"))
+    array.push(num)
+}
+
+ array.sort()
+ document.write("Array completo: " + array + "<br>")
+
+var filtro = array => array > 0
+    filtrado = array.filter(filtro)
+
+document.write("Array sem 0 e numeros negativos: " + filtrado + "<br>")
+
+</script>

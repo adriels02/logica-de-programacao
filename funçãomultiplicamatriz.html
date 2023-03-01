@@ -1,0 +1,54 @@
+<script>
+
+/* Escreva um programa de computador que contenha uma
+função que receba duas matrizes quaisquer e retorne como resultado a multiplicação
+destas matrizes. Caso não seja possível multiplicar as matrizes (dimensões
+incompatíveis), exiba uma mensagem de erro e retorne uma matriz vazia. */
+
+function matriz() {
+var linhas , colunas , array = []
+    linhas = parseInt(prompt("Digite o número de linhas da matriz"))
+    colunas = parseInt(prompt("Digite a quantidade de colunas da matriz"))      
+     for(var i = 0 ; i < linhas ; i++){
+        array[i] = []
+         for (var j = 0 ; j < colunas ; j++) {
+            array[i][j] = parseInt(prompt("Insira um numero para a matriz"))
+         }
+     }               
+        return array
+}
+ function mult() {
+var matriz1 = [] = matriz(matriz1)
+var matriz2 = [] = matriz(matriz2)
+var multi = []
+var acumulador
+    if (matriz1[0].length == matriz2.length) {
+        for(var i = 0 ; i < matriz1.length; i++){
+            multi[i] = []
+              for(var j = 0; j < matriz2[0].length ; j++){
+             multi[i][j] = []
+              }
+        }
+        for (var i = 0; i < matriz1.length; i++){
+            for(var j = 0; j < matriz2[0].length; j++){
+                 if (j >= 0) {
+                 acumulador = 0
+                }
+            for(var k = 0;k < matriz1[0].length; k++){
+                multi[i][j] = acumulador += matriz1[i][k] * matriz2[k][j]
+       }
+    }
+}
+            document.write("A multiplicação das matrizes é: " + "<br>")
+            for(var i = 0 ; i < multi.length; i++) {
+                document.write(multi[i] + "<br>")
+            }
+            return []
+    }
+    else {
+               alert("As matrizes informadas não são compatíveis para a operação")
+         return []
+    }
+ }
+    document.write(mult())
+</script>

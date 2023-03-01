@@ -1,0 +1,23 @@
+<script>
+
+/*Desenvolva um programa de computador que contenha uma
+função que receba um array de números inteiros e retorne o maior número
+deste array. Teste essa função com dois exemplos. */
+
+function maior(array) {
+ var maior
+  maior = array[0]
+    for (var i = 0 ; i < array.length; i++){
+
+        if (maior < array[i]){
+            maior = array[i]
+        }
+    }
+    
+     return maior
+}
+ array = [120 , 1 , 200, 77, 5, 9, 179]
+document.write(maior(array) + "<br>")
+array2 = [12, 1 , 6, 77, 13, 100, 171]
+document.write(maior(array2))
+</script>

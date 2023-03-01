@@ -1,0 +1,51 @@
+<script>
+/* Escreva um programa de computador que leia um número
+inteiro A e uma matriz V 10x10 de inteiros. Conte quantos valores iguais a A
+estão na matriz. Crie, a seguir, uma matriz X, contendo todos os elementos de
+V diferentes de A. Mostre os resultados. */
+
+var A , contador = 0
+var matrizv = []
+var matrizx = []
+
+ A = parseInt(prompt("digite um número inteiro"))
+
+ for (var i= 0; i < 10; i++){
+    matrizv[i] = []
+  for(var j = 0; j < 10; j++){
+ 
+      matrizv[i][j] = parseInt(prompt("Insira um numero para a matriz V"))
+  }
+ }
+
+for(var i = 0; i < 10; i++){
+    for(var j = 0; j < 10; j++){
+
+       if (A == matrizv[i][j]){
+        contador += 1
+       }
+    }
+}
+
+document.write("Essa é a matriz V: " + "<br>")
+ for(var i = 0; i < 10; i++){
+    document.write(matrizv[i] + "<br>")
+ }
+
+document.write("A quantidade de vezes que o número inteiro " + A + "aparece é: " + contador + "<br>")
+
+for (var i= 0; i < matrizv.length ; i++){
+    matrizx[i] = []
+  for(var j = 0; j < matrizv[0].length; j++){
+      
+    if(matrizv[i][j] != A){
+      matrizx[i][j] = matrizv[i][j]
+      }
+  }
+ }
+
+document.write("Essa é a matriz X, sem o numero inteiro " + A + "<br>")
+for (var i = 0; i < matrizx.length;i++){
+    document.write(matrizx[i])
+}
+</script>

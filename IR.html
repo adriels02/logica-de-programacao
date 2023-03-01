@@ -1,0 +1,35 @@
+<script>
+
+/* Desenvolva um programa para efetuar o cálculo do salário
+líquido de um funcionário, que incide um desconto do Imposto de Renda
+(IR), que depende do valor do salário bruto, conforme tabela abaixo:
+
+                      Desconto do IR Porcentagem de desconto
+
+                   Salário bruto de até R$ 1.212,00    Isento
+                   Salário bruto de até R$ 1.700,00      5%
+                   Salário bruto de até R$ 3.500,00      10%                  
+                   Salário bruto acima de R$ 3.500,00    20% 
+
+*/
+
+var salario, liquido;
+
+salario = parseFloat(prompt("Digite o valor do salario do funcionario"))
+
+if (salario <= 1212.00) {
+    document.write("o valor liquido do salario é: " + salario , " R$")
+}
+if (salario > 1212.00 && salario <= 1700.00) {
+    liquido = salario - (salario * 0.05)
+    document.write("o valor liquido do salario é: " + liquido , " R$")
+}
+if (salario > 1700.00 && salario <= 3500.00) {
+    liquido = salario - (salario * 0.10)
+    document.write("o valor liquido do salario é: " + liquido , " R$")
+}
+if (salario > 3500) {
+    liquido = salario - (salario * 0.20)
+    document.write("o valor liquido do salarioFFFF é: " + liquido , " R$")
+}
+</script>

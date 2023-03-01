@@ -1,0 +1,24 @@
+<script>
+
+/* Em uma determinada faculdade, dado que um estudante não
+atingiu a média 7,0, este precisará fazer uma prova final. A nota mínima na
+avaliação final para que este estudante seja aprovado é dada pela seguinte
+fórmula: NF = (50 - Média x 6) ÷ 4. Assim, com base nessa informação
+desenvolva um programa que solicite três notas e caso esteja abaixo da
+média, calcule qual a nota mínima que o estudante precisa tirar na avaliação
+final para passar. */
+
+var media, nota1, nota2, nota3, notaminima;
+nota1 = parseFloat(prompt("Informe a nota 1 do aluno:"))
+nota2 = parseFloat(prompt("Informe a nota 2 do aluno:"))
+nota3 = parseFloat(prompt("Informe a nota 3 do aluno:"))
+media = (nota1 + nota2 + nota3) / 3
+
+if (media >= 7) {
+    document.write("Parabéns, o aluno informado passou com a media: " + media)
+ }
+else {
+notaminima = (50 - media * 6) / 4
+   document.write("Será necessário o aluno fazer a avaliação final, a nota mínima desejada para passar é: " + notaminima)
+}
+</script>

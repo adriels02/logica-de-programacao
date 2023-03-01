@@ -1,0 +1,50 @@
+<script>
+/* Um posto está vendendo combustíveis com a seguintetabela de descontos:
+
+                               Combustível Preços Descontos
+                               
+Álcool R$ 4,75 Até 20 litros, desconto de 3% por litro acima de 20 litros, desconto de 5% por litro
+Gasolina R$ 5,45 Até 20 litros, desconto de 4% por litro acima de 20 litros, desconto de 6% por litro
+
+De posse destas informações, escreva um programa que solicite ao usuário
+que tipo de combustível (sugestão: faça o usuário digitar o número 1 para o
+álcool e 2 para a gasolina) e a quantidade de combustível (em litros) e exiba o
+valor total a ser pago. */
+
+var litros, tipo, precoalcool, precogasolina, pagar;
+
+tipo = parseInt(prompt('Digite "1" para colocar Alcool e "2" para gasolina.'))
+litros = parseFloat(prompt("Digite quantos litros deseja abastecer."))
+
+switch (tipo) {
+    case 1:
+        
+     if (litros > 0 && litros <= 20) {
+        precoalcool = 4.75 - (4.75 * 0.03) 
+        pagar = (precoalcool * litros)
+        document.write("o valor total a ser pago é: " + pagar , " R$")
+     }
+     else {
+        precoalcool = 4.75 - (4.75 * 0.05)
+        pagar = (precoalcool * litros)
+        document.write("o total a ser pago é: " + pagar , " R$")
+     }
+        break;
+
+    case 2 :
+
+     if (litros > 0 && litros <= 20) {
+        precogasolina = 5.45 - (5.45 * 0.04) 
+        pagar = (precogasolina * litros)
+        document.write("o valor total a ser pago é: " + pagar , " R$")
+     }
+     else {
+        precogasolina = 5.45 - (5.45 * 0.06)
+        pagar = (precogasolina * litros)
+        document.write("o total a ser pago é: " + pagar , " R$")
+     }
+        break;
+    default:
+        break;
+}
+</script>

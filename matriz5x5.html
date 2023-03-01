@@ -1,0 +1,72 @@
+<script>
+/* Escreva um algoritmo que lê uma matriz M(5,5) e calcula as somas:
+
+.Da linha 4 de M
+.Da coluna 2 de M
+.Da diagonal principal
+.Da diagonal secundária
+.De todos os elementos da matriz M
+
+Escrever essas somas e a matriz. */
+
+ var M = []
+ var acumulador = 0
+ var colunadois , linhaquatro, diagonalp, diagonals, total
+
+for (i = 0; i < 5; i++){
+    M[i] = []
+    for (j = 0; j < 5; j++){
+
+        M[i][j] = parseInt(prompt("Digite um número para adicionar na matriz"))
+    }
+}
+
+document.write("A matriz selecionada é: " + "<br>")
+for (var i = 0; i < 5; i++){
+    document.write(M[i] + "<br>")
+}
+
+for (var i = 0; i < M.length; i++){
+    colunadois = acumulador =+ acumulador + M[i][1]
+}
+acumulador = 0
+document.write("A soma da segunda coluna é: " + colunadois + "<br>")
+
+
+for (var j = 0; j < M[0].length; j++){
+   linhaquatro = acumulador =+ acumulador + M[3][j]
+}
+acumulador = 0 
+document.write("A soma da linha quatro da matriz é: " + linhaquatro + "<br>")
+
+for (var i = 0; i < M.length; i++){
+    for (var j = 0; j < M[0].length; j++){
+        
+        if (i == j ){
+             diagonalp = acumulador =+ acumulador + M[i][j]
+        }
+    }
+}
+document.write("A soma da diagonal principal é: " + diagonalp + "<br>")
+acumulador = 0
+
+for (var i = 0; i < M.length; i++){
+    for (var j = 0; j < M[0].length; j++){
+        
+        if((i == 4 && j == 0) || (i == 3 && j == 1) || (i == 2 && j == 2) || (i == 1 && j == 2) || (i == 0 && j == 4)) {
+            diagonals = acumulador =+ acumulador + M[i][j]
+        }
+    }
+}
+acumulador = 0
+document.write("A soma da diagonal secundaria e: " + (diagonals + 1) + "<br>")
+
+for(var i = 0; i < M.length; i++){
+    for (var j = 0; j < M[0].length; j++){
+        
+        total = acumulador =+ acumulador + M[i][j]
+    }
+}
+
+document.write("A soma total dos elementos da matriz e: " + total)
+</script>

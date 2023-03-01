@@ -1,0 +1,27 @@
+<script>
+/*  Um hotel cobra R$ 50,00 por diária acrescida de uma taxa de
+serviços. A taxa de serviços é de:
+
+     R$ 4,00 por diária, se o número de diárias for menor que 5;
+     R$ 3,60 por diária, caso contrário. 
+
+De posse destas informações, construa um
+programa que solicite o número de diárias e informe o quanto deverá ser
+pago pelo hóspede. */ 
+
+ var diaria, taxa1, taxa2, dias, pagamento1, pagamento2;
+ diaria = 50.00
+ taxa1 = 4.00
+ taxa2 = 3.60
+ dias = parseInt(prompt("Informe a quantidade de dias no hotel"))
+
+ if (diaria < 5){
+    pagamento1 = (diaria + taxa1) * dias
+    document.write("Valor total que o hóspede deve pagar é: " + pagamento1 , " R$")
+ }
+
+ else {
+    pagamento2 = (diaria + taxa2) * dias
+    document.write("Valor total que o hóspede deve pagar é: " + pagamento2 , " R$")
+ }
+</script>

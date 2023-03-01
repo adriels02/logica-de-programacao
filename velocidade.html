@@ -1,0 +1,30 @@
+<script>
+
+/* Desenvolva um programa de computador que resolva o
+seguinte problema: a velocidade máxima permitida em uma avenida e a
+velocidade com que o motorista estava dirigindo nela e calcule a multa que
+uma pessoa vai receber, sabendo que são pagos: a) 50 reais se o motorista
+estiver ultrapassar em até 10km/h a velocidade permitida (ex.: velocidade
+máxima: 50km/h; motorista a 60km/h ou a 56km/h); b) 100 reais, se o
+motorista ultrapassar de 11 a 30 km/h a velocidade permitida. c) 200 reais, se
+estiver acima de 31km/h da velocidade permitida. */
+
+var velocidademaxima, velocidademotorista, diferencakm;
+
+velocidademaxima = parseInt(prompt("Informe a velocidade maxima permitida na via em Km/h"))
+velocidademotorista = parseInt(prompt("Informe a velocidade do motorista em Km/h"))
+diferencakm = (velocidademotorista - velocidademaxima)
+
+if (velocidademaxima >= velocidademotorista) {
+    document.write("Velocidade permitida, sem multa")
+}
+ else if (diferencakm <= 10){
+          document.write("Multado no valor de 50.00 R$")
+ }
+ else if (diferencakm <= 30){
+          document.write("Multado no valor de 100.00 R$")
+ }
+ else if (diferencakm >= 31){
+          document.write("Multado no valor de 200.00 R$")
+ }
+</script>

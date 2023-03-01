@@ -1,0 +1,16 @@
+<script>
+
+/* Desenvolva um programa que dado um número inteiro n, calcule
+o somatório de 1 até n (1 + 2 + 3 + …. + n). Exemplo, se o usuário informar o
+número 5, o programa calculará 1 + 2 + 3 + 4 + 5 e mostrará como resposta o
+número 15. */
+var n, soma = 0
+n = parseInt(prompt("Digite um número"))
+
+for (var i = 1; i <= n; i++) {
+    soma += i
+    document.write(i + " + ")
+}
+
+document.write(" = " + soma)
+</script>

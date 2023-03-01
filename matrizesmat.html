@@ -1,0 +1,106 @@
+<script>
+/* 5. [MatrizesMat] Elabore um programa de computador que lê duas matrizes
+A(4,6) e B(6,4) e crie uma matriz que seja:
+
+.O produto matricial de A por B
+.A soma de A com B
+.A diferença de A com B
+
+Escrever as matrizes lidas e as calculadas.*/
+
+var A = []
+var B = []
+var C = []
+var D = []
+var E = []
+var acumulador
+for (var i = 0 ; i < 2 ; i++){
+    A[i] = []
+  for (var j = 0 ; j < 3 ; j++){
+       A[i][j] = parseInt(prompt("Digite um numero pra inserir na matriz A"))
+    }
+}
+for (var i = 0 ; i < 3 ; i++){
+    B[i] = []
+    for (var j = 0 ; j < 2 ; j++){
+    B[i][j] = parseInt(prompt("Digite um numero pra inserir na matriz B"))
+    }
+}
+document.write("A matriz A é: " + "<br>")
+  for (var i = 0; i < 2; i++){
+document.write(A[i] + "<br>")
+}
+document.write("A matriz B é: " + "<br>")
+  for (var i = 0; i < 3; i++){
+document.write(B[i] + "<br>")
+}
+
+for (var i = 0; i < 2; i++ ) {
+   C[i] = []
+   for (var j = 0 ; j < 2; j++){
+
+    C[i][j] = []
+
+   }
+}
+for (var i = 0; i < 2; i++){
+    for(var j = 0; j < 2; j++){
+      if (j >= 0) {
+        acumulador = 0
+      }
+         for(var k = 0;k < 3; k++){
+           C[i][j] = acumulador += A[i][k] * B[k][j]
+
+       }
+    }
+}
+
+document.write("o produto da matriz A * B é: " + "<br>")
+  for (var i = 0; i < 2; i++){
+document.write(C[i] + "<br>")
+}
+
+var transpose = () => {
+   for (var i = 0; i < B.length; i++) {
+      for (var j = 0; j < i; j++) {
+        var tmp = B[i][j]
+         B[i][j] = B[j][i]
+         B[j][i] = tmp
+        
+      }
+     }
+  }
+   
+for (var i = 0; i < 2; i++ ) {
+   D[i] = []
+   for (var j = 0 ; j < 3; j++){
+    D[i][j] = []
+   }
+}
+
+for (var i = 0; i < 2; i++){
+    for(var j = 0; j < 3; j++){
+            D[i][j] = A[i][j] + B[i][j]
+    }
+}
+
+document.write("a soma da matriz A + B é: " + "<br>")
+  for(var i = 0; i < 2; i++){
+document.write(D[i] + "<br>")
+   }
+ for (var i = 0; i < 2; i++ ) {
+   E[i] = []
+    for (var j = 0 ; j < 3; j++){
+     E[i][j] = []
+   }
+}
+for (var i = 0; i < 2; i++){
+    for(var j = 0; j < 3; j++){      
+         E[i][j] = A[i][j] - B[i][j]
+    }
+}
+document.write("a diferença de A - B é: " + "<br>")
+  for(var i = 0; i < 2; i++){
+document.write(E[i] + "<br>")
+}
+</script>

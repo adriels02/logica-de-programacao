@@ -1,0 +1,20 @@
+<script>
+       
+/*Chico tem 1,50m e cresce 2 centímetros por ano, enquanto
+Juca tem 1,10m e cresce 3 centímetros por ano. Desenvolva um programa que
+calcule e imprima quantos anos serão necessários para que Juca seja maior
+que Chico.*/
+
+var alturachico, crescimentochico, alturajuca, crescimentojuca, anos = 0;
+
+alturachico = 1.5;
+alturajuca = 1.1;
+
+while (alturajuca < alturachico ) {
+
+       alturachico = alturachico + 0.02;
+       alturajuca = alturajuca + 0.03;
+       anos++
+}
+ document.write("Juca levou essa quantidade de anos para passar chico em altura: " + anos)
+</script>

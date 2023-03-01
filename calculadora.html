@@ -1,0 +1,32 @@
+<script>
+    
+/*Desenvolva um programa que implemente uma calculadora
+capaz de realizar as 4 operações básicas (adição, subtração, multiplicação e
+divisão) entre dois números.*/
+
+var numero1, numero2, operacao, resultado;
+numero1 = parseFloat(prompt("Digite o primeiro numero do calculo"))
+operacao = parseInt(prompt("Digite 1 para soma, 2 para subtracao, 3 para multiplicaçao e 4 para divisao"))
+numero2 = parseFloat(prompt("Digite o segundo numero do calculo"))
+switch (operacao) {
+    case 1 :
+        resultado = numero1 + numero2 
+        document.write("Voce realizou uma soma, o resultado é: " + resultado)
+        break;
+    case 2 :
+        resultado = numero1 - numero2
+        document.write("Voce realizou uma subtracao, o resultado é: " + resultado)
+        break;
+    case 3 :
+        resultado = numero1 * numero2
+        document.write("Voce realizou uma multiplicacao, o resultado é: " + resultado)
+        break;
+    case 4 :
+        resultado = numero1 / numero2
+        document.write("Voce realizou uma divisao, o resultado é: " + resultado)
+        break;
+    default:
+        document.write("Número digitado é invalido")
+        break;
+}
+</script>

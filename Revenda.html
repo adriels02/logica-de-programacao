@@ -1,0 +1,42 @@
+<script>
+
+/* Para estimular as vendas por parte dos seus vendedores,
+uma revenda de pneus da cidade está oferecendo o seguinte estímulo: se um
+vendedor, durante o mês, vender até 15 pneus, ganhará um bônus de 6% do
+salário; se vender entre 16 a 25 pneus, ganhará um bônus de 9% do salário, se
+vender entre 26 e 45 pneus, ganhará um bônus de 15% do salário e se vender
+acima de 45 pneus, ganhará, além de um bônus de 20% do salário, mais R$
+300,00. Assim, desenvolva um programa que informado o salário de um
+vendedor e a quantidade de pneus vendidos por este durante o mês, mostre
+quanto ele irá ganhar no final do mês. */
+
+var salario, pneus, bonus, salariofinal;
+
+salario = parseFloat(prompt("Informe o salário base do funcionario"))
+pneus = parseInt(prompt("Informe a quantidade de pneus vendidos pelo funcionario"))
+
+
+if (pneus > 0 && pneus <= 15) {
+    bonus = salario * 0.06
+    salariofinal = salario + bonus
+    document.write("o valor do salario do funcionario é " + salariofinal , " R$")
+}
+
+if (pneus >= 16 && pneus <= 25) {
+    bonus = salario * 0.09
+    salariofinal = salario + bonus
+    document.write("o valor do salario do funcionario é " + salariofinal , " R$")
+}
+
+if (pneus >= 26 && pneus <= 45) {
+    bonus = salario * 0.15
+    salariofinal = salario + bonus
+    document.write("o valor do salario do funcionario é " + salariofinal , " R$")
+}
+
+if (pneus >= 46) {
+    bonus = salario * 0.20 + 300
+    salariofinal = salario + bonus
+    document.write("o valor do salario do funcionario é " + salariofinal , " R$")
+}
+</script>

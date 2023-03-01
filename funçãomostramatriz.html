@@ -1,0 +1,32 @@
+<script>
+
+/* Elabore um programa de computador que contenha uma
+função que receba uma matriz de qualquer dimensão (m x n) e exiba essa matriz. */
+
+function matriz() {
+    var linhas , colunas , array = []
+        linhas = parseInt(prompt("Digite o número de linhas da matriz"))
+        colunas = parseInt(prompt("Digite a quantidade de colunas da matriz"))      
+         for(var i = 0 ; i < linhas ; i++){
+            array[i] = []
+             for (var j = 0 ; j < colunas ; j++) {
+                array[i][j] = parseInt(prompt("Insira um numero para a matriz"))
+             }
+         }               
+            document.write("a matriz é: " + "<br>")
+            for(var i = 0; i < array.length; i++){
+            document.write(array[i] + "<br>")
+        }
+        return []
+}
+document.write(matriz())
+</script>
+
+
+
+
+
+
+
+
+

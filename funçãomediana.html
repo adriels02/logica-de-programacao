@@ -1,0 +1,36 @@
+<script>
+
+/* Elabore um programa de computador que tenha uma
+função que calcule e retorne a mediana de um array de números inteiros.
+Teste essa função com dois exemplos. */
+
+function ordenamento(array) {
+var auxiliar
+    for (var i = 0; i < array.length; i++){
+        if (array[i] > array[i + 1]) {
+           auxiliar = array[i]
+           array[i] = array[i + 1]
+           array[i + 1] = auxiliar
+           i = -1
+        }
+    }
+   return array
+}
+function mediana(array){
+  ordenamento(array)
+      var mediana
+      var arredondamento
+      var elemento
+        if (array.length % 2 == 1){
+           arredondamento = Math.floor(array.length / 2)         
+          return array[arredondamento]
+        }
+         else {               
+         elemento = (array.length / 2) - 1
+              arredondamento = (array[elemento] + array[array.length / 2]) / 2
+           return arredondamento
+         }
+}
+var teste = [3 , 1, 5 ,2, 0, 7, 4]
+document.write(mediana(teste))
+</script>

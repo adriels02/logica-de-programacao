@@ -1,0 +1,20 @@
+<script>
+
+
+var prestacaoStr, prestacao, taxa_de_jurosStr, taxa_de_juros, atrasos_diasStr, atrasos_dias, juros_decimal,formula_prestacao, valor_atraso;
+
+prestacaoStr = prompt("Informe o valor da prestação")
+prestacao = parseInt(prestacaoStr)
+taxa_de_jurosStr = prompt("Informe a taxa de juros")
+taxa_de_juros = parseInt(taxa_de_jurosStr)
+atrasos_diasStr = prompt("Informe a quantidade de dias em atraso")
+atrasos_dias = parseInt(atrasos_diasStr)
+
+juros_decimal = taxa_de_juros / 100;
+
+formula_prestacao = prestacao * juros_decimal * atrasos_dias;
+
+valor_atraso = formula_prestacao + prestacao
+
+document.write( "Prestação com juros: " +  valor_atraso, " R$")
+ </script>

@@ -1,0 +1,22 @@
+<script>
+
+/* Desenvolva um programa que solicite um número inteiro n e exiba
+em uma única linha, todos os números pares entre 1 até n e a soma destes
+números. Exemplo: se o usuário informar o número n = 10, o programa
+deverá exibir como resposta “2 + 4 + 6 + 8 + 10 = 30”. */
+
+ var n, soma;
+
+ n = parseInt(prompt("Digite um número inteiro."))
+ soma = 0
+
+ for (var i = 2; i <= n; i += 2) {
+      document.write(i)
+      soma += i
+      if (i < n - 1) {
+       document.write(" + ")
+      }
+
+ } 
+      document.write(" = " + soma)
+</script>

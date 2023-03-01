@@ -1,0 +1,35 @@
+<script>
+    
+/* Em uma universidade, as médias são atribuídas por conceitos, de
+acordo com a tabela abaixo:
+
+  Conceito Faixa de média correspondente
+        A Entre 9,0 e 10,0
+        B Entre 7,0 e 8,9
+        C Entre 5,0 e 6,9
+        D Abaixo de 5,0
+
+Assim, sabendo que em qualquer disciplina há duas avaliações e que a média
+é calculada utilizando-se média aritmética simples, desenvolva um programa
+que informe qual o conceito a ser atribuído a um estudante desta
+universidade, em uma disciplina qualquer.
+ */
+
+var nota1,nota2,media;
+
+nota1 = parseFloat(prompt("Digite a nota da primeira prova"))
+nota2 = parseFloat(prompt("Digite a nota da segunda prova"))
+media = (nota1 + nota2) / 2
+
+if (media < 5) {
+    document.write("A média do aluno na disciplina é: " + media , ". Portanto foi colocado no conceito 'D'")
+}
+if (media >= 5 && media <= 6.9) {
+    document.write("A média do aluno na disciplina é: " + media , ". Portanto foi colocado no conceito 'C'")
+}
+if (media >= 7 && media <= 8.9){
+    document.write("A média do aluno na disciplina é: " + media , ". Portanto foi colocado no conceito 'B'")
+}
+if (media >= 9 && media <= 10)
+    document.write("A média do aluno na disciplina é: " + media , ". Portanto foi colocado no conceito 'A'")
+</script>

@@ -1,0 +1,17 @@
+<script>
+
+/* Escreva um programa de computador que leia os números
+inteiros de uma matriz M 3x3 e calcule o determinante dessa matriz */
+
+var M = []
+
+for (var i = 0 ; i < 3 ; i++){
+    M[i] = []
+    for (var j = 0 ; j < 3 ; j++){
+    M[i][j] = parseInt(prompt("Digite um numero para inserir na matriz"))
+    }
+}
+var determinante = (M[0][0] * M[1][1] * M[2][2] + M[0][1] * M[1][2] * M[2][0] + M[0][2] * M[1][0] * M[2][1] - M[0][0] * M[1][2] * M[2][1] - M[0][1] * M[1][0] * M[2][2] - M[0][2] * M[1][1] * M[2][0])
+document.write(determinante)
+
+</script>

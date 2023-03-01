@@ -1,0 +1,28 @@
+<script>
+    
+/*Desenvolva um programa de computador que leia dois arrays
+(A e B) de 50 posições de números inteiros. O programa deve, então, subtrair
+o primeiro elemento de A do último de B, acumulando o valor, subtrair o
+segundo elemento de A do penúltimo de B, acumulando o valor, e assim por
+diante. Mostre o resultado da soma final. */
+
+var A = []
+var B = []
+var num , acumulador = 0
+
+for (var i = 0 ; i < 50 ; i++){
+    num = parseInt(prompt("Digite um numero para a array A"))
+    A.push(num)
+}
+for(var i = 0 ; i < 50 ; i++){
+    num = parseInt(prompt("digite um numero para a array B"))
+    B.unshift(num)
+}
+for (var i = 0 ; i < 50; i++){
+     A[i] = A[i] - B[i]
+}
+for (var i = 0 ; i < 50; i++) {
+     acumulador += A[i]
+}
+document.write("o acumulo dos elementos da array apos a subtraçao e : " + acumulador)
+</script>

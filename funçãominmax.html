@@ -1,0 +1,32 @@
+<script>
+
+/* Escreva um programa de computador que possua uma
+função que fique solicitando que o usuário infome um número inteiro até que
+o número informado esteja compreendido entre dois valores, sendo um
+mínimo e um máximo. Exemplo: se esta função determinasse que o mínimo
+fosse 1 e o máximo fosse 10, a função ia ficar solicitando um número até que o
+número informado estivesse entre 1 e 10. Teste essa função com dois
+exemplos. */
+
+var minimo = parseInt(prompt("Digite um número mínimo"))
+var maximo = parseInt(prompt("Digiteum número máximo"))
+
+function inteiro(num) {
+for (;;) {
+
+    var num = parseInt(prompt("Digite um número inteiro entre o mínimo e máximo"))
+    if (num > minimo && num < maximo){
+          return num
+        break
+    }
+
+}
+}
+
+document.write(inteiro())
+
+
+
+
+
+</script>

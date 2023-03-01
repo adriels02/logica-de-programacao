@@ -1,0 +1,35 @@
+<script>
+/* Elabore um programa de computador que lê uma matriz M(5,5)
+e cria dois arrays SL(5) e SC(5) que contenham, respectivamente, as somas
+das linhas e colunas de M. Escrever a matriz e os arrays criados. */
+
+    var matriz = [], soma_linha = [], soma_coluna = [];
+    var soma1, soma2;
+
+    for(var i = 0; i < 5; i++){
+       matriz[i] = []
+       for(var j = 0; j < 5; j++){
+         matriz[i][j] = parseInt(prompt("Digite um numero para a matriz"));
+    }
+    }
+    for(var i = 0; i < 5; i++){
+    soma1 = 0;
+    soma2 = 0;
+    for(var j = 0; j<5; j++){
+    soma1 += matriz[i][j];
+    soma2 += matriz[j][i];
+    }
+    soma_linha.push(soma1);
+    soma_coluna.push(soma2);
+    }
+    for(var i = 0; i<5; i++){
+    for(var j = 0; j<5; j++){
+    document.write("[" + matriz[i][j] + "]");
+    }
+    document.write("<br>");
+    }
+    document.write("<br>Lista com as somas das linhas => " +
+    soma_linha.join(" - "));
+    document.write("<br>Lista com as somas das colunas => " +
+    soma_coluna.join(" - "));
+    </script>

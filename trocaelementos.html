@@ -1,0 +1,23 @@
+<script>
+
+/* Escreva um programa de computador que leia 20
+elementos inteiros e os armazene em um array. Em seguida, troque o
+primeiro elemento com o último, o segundo com o penúltimo, o terceiro com
+antepenúltimo, e assim sucessivamente. Efetuada a troca, mostre o antigo e
+novo array. */
+
+var elementostrue = []
+var elementosinvert = []
+var valores
+
+for (var i = 0 ; i < 20; i++) {
+
+    valores = parseInt(prompt("Digite um valor"))
+    elementostrue.push(valores)
+    elementosinvert.unshift(valores)
+}
+
+
+document.write("A array é : " + elementostrue)
+document.write("   o inverso da array é : " + elementosinvert)
+</script>
